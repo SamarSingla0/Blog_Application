@@ -60,7 +60,7 @@ def login(request):
     context = {
         'form': form,
     }
-    return render(request, 'login.html')
+    return render(request, 'login.html', context)
 
 
 

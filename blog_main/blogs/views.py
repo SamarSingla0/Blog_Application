@@ -26,7 +26,7 @@ def blogs(request, slug):
     context = {
         'single_blog': single_blog,
     }
-    return render(request, 'blogs.html')
+    return render(request, 'blogs.html', context)
 
 
 def search(request):
@@ -36,7 +36,6 @@ def search(request):
         'blogs': blogs,
         'keyword': keyword,
     }
-    return render(request, 'search.html')
+    return render(request, 'search.html', context)
 
 
-.
